@@ -16,7 +16,8 @@
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp" />
+        android:layout_marginTop="43dp"
+        android:textStyle="bold" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -31,10 +32,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/twoPlayers"
-        android:layout_marginBottom="39dp"
         android:background="@drawable/msn"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/onePlayer" />
+        android:layout_below="@+id/onePlayer"
+        android:layout_alignStart="@+id/onePlayer"
+        android:layout_marginTop="73dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -44,5 +45,23 @@
         android:onClick="help"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/oneplayer"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/onePlayer"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/twoplayer"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/twoPlayers"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

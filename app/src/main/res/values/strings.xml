@@ -6,5 +6,7 @@
     <string name="title_activity_menu">MenuActivity</string>
     <string name="titulo_help">Instrucciones</string>
     <string name="help">Responde la mayor cantidad\n de preguntas en 10 segundos</string>
+    <string name="oneplayer">One Player</string>
+    <string name="twoplayer">Two Player</string>
 
 </resources>
