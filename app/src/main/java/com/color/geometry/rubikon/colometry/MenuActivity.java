@@ -15,6 +15,9 @@ public class MenuActivity extends ActionBarActivity {
     private ImageButton ayuda;
     private ImageButton onePlayer;
     private ImageButton twoPlayer;
+    private ImageButton twoPlayer2;
+
+    ///
 
 
     @Override

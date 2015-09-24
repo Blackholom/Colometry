@@ -32,6 +32,17 @@ public class QuestionActivity extends Activity {
         txtcount = (TextView)findViewById(R.id.txtcountd);
 
         countInit();
+
+        optA.setOnClickListener(new ImageButton.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent new_int = new Intent(QuestionActivity.this, Result1PActivity.class);
+                startActivity(new_int);
+                finish();
+            }
+        });
+
     }
 
     public void countInit(){
