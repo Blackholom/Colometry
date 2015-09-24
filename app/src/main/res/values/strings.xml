@@ -3,4 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="titulo_help">Instrucciones</string>
+    <string name="help">Responde la mayor cantidad\n de preguntas en 10 segundos</string>
+
 </resources>

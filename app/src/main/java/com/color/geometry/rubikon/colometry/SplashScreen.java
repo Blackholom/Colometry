@@ -1,17 +1,60 @@
 package com.color.geometry.rubikon.colometry;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.CountDownTimer;
+import android.support.v7.app.ActionBarActivity;
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.ProgressBar;
 
-public class SplashScreen extends AppCompatActivity {
+public class SplashScreen extends Activity {
+
+    public static final int seconds=3;
+    public static final int miliseconds=seconds*1000;
+    //private ProgressBar pbprogreso;
+    public static final int delay=2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+        //pbprogreso=(ProgressBar)findViewById(R.id.pbprogreso);
+        //pbprogreso.setMax(max_progress());
+
+
+
+        empezaranimacion();
     }
+
+    public void empezaranimacion(){
+        new CountDownTimer(miliseconds, 1000){
+
+            @Override
+            public void onTick(long millisUntilFinished) {
+                //pbprogreso.setProgress(establecer_progreso(millisUntilFinished));
+            }
+
+            @Override
+            public void onFinish() {
+                Intent newfront = new Intent(SplashScreen.this, MenuActivity.class);
+                startActivity(newfront);
+                finish();
+            }
+        }.start();
+    }
+
+    /*public  int  establecer_progreso(long milisecond){
+        return (int) ((miliseconds-milisecond)/1000);
+    }**/
+
+    /*public int max_progress(){
+        return seconds-delay;
+    }**/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
