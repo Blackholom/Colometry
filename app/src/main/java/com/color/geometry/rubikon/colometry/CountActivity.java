@@ -33,6 +33,7 @@ public class CountActivity extends Activity {
             @Override
             public void onTick(long millisUntilFinished) {
                 counter.setText(""+(millisUntilFinished/1000));
+                counter.setTextSize(90);
             }
 
             @Override
